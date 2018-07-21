@@ -11,6 +11,7 @@ namespace Crayons.Domain.DataAccess.Repositories
         public Repository(CrayonsDbContext context)
         {
             _context = context;
+            _context.Database.EnsureCreated();
         }
         public void Add(T entity)
         {
