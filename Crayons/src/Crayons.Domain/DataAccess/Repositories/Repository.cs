@@ -13,24 +13,31 @@ namespace Crayons.Domain.DataAccess.Repositories
             _context = context;
             _context.Database.EnsureCreated();
         }
-        public void Add(T entity)
+        public virtual void Add(T entity)
         {
             _context.Set<T>().Add(entity);
+            Save();
         }
 
-        public T FindById(int id)
+        public virtual T FindById(int id)
         {
             return _context.Set<T>().Where(x=>x.Id.Equals(id)).FirstOrDefault();
         }
 
-        public IList<T> GetAll()
+        public virtual IList<T> GetAll()
         {
             return _context.Set<T>().ToList();
         }
 
-        public void Update(T entity)
+        public virtual void Update(T entity)
         {
             _context.Set<T>().Update(entity);
+            Save();
+        }
+
+        protected virtual void Save()
+        {
+            _context.SaveChanges();
         }
     }
 }
