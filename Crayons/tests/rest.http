@@ -1,0 +1,26 @@
+GET http://localhost:5000/api/Recipies
+
+GET http://localhost:5000/api/Recipies/1
+
+POST http://localhost:5000/api/Recipies
+Content-Type: application/json
+
+{
+    "Name":"Pizza",
+    "Ingrediences":"Szynka, ser, pieczarki",
+    "Steps":"
+    1. Spróbuj zrobić pizzę
+    2. Spal pół kuczni
+    3. Zamów pizzę na pyszne.pl"
+}
+
+PUT http://localhost:5000/api/Recipies
+Content-Type: application/json
+
+{
+    "Name":"Pizza hawajska",
+    "Ingrediences":"Szynka, ser, pieczarki, ananas",
+    "Steps":"
+    1. Wpadnij na ten pomysł
+    2. Zabij się"
+}
