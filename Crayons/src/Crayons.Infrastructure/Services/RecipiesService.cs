@@ -17,11 +17,6 @@ namespace Crayons.Infrastructure.Services
             _recipiesRepository.Add(recipe);
         }
 
-        public void Delete(Recipe recipe)
-        {
-            _recipiesRepository.Delete(recipe);
-        }
-
         public Recipe FindById(int id)
         {
             return _recipiesRepository.FindById(id);

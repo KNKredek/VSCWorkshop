@@ -9,6 +9,5 @@ namespace Crayons.Infrastructure.Services.Interfaces
         IList<Recipe> GetAll();
         void Add(Recipe recipe);
         void Update(Recipe recipe);
-        void Delete(Recipe recipe);
     }
 }

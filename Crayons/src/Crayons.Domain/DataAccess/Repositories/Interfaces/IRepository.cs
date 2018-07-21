@@ -9,6 +9,5 @@ namespace Crayons.Domain.DataAccess.Repositories.Interfaces
         IList<T> GetAll();
         void Add(T entity);
         void Update(T entity);
-        void Delete(T entity);
     }
 }

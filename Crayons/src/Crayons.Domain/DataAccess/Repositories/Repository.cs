@@ -17,11 +17,6 @@ namespace Crayons.Domain.DataAccess.Repositories
             _context.Set<T>().Add(entity);
         }
 
-        public void Delete(T entity)
-        {
-            _context.Set<T>().Remove(entity);
-        }
-
         public T FindById(int id)
         {
             return _context.Set<T>().Where(x=>x.Id.Equals(id)).FirstOrDefault();
