@@ -2,7 +2,7 @@ version: "3"
 
 services:
   api:
-    build: ../src/Crayons.Api
+    build: ..
     ports:
       - 5000:5000
     networks:
