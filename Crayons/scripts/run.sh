@@ -1,2 +1,2 @@
-./publish.sh
+(cd ../build; ./run.sh)
 docker-compose up -d

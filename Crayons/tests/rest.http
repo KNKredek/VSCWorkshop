@@ -18,6 +18,7 @@ PUT http://localhost:5000/api/Recipies
 Content-Type: application/json
 
 {
+    "Id" : 1,
     "Name":"Pizza hawajska",
     "Ingrediences":"Szynka, ser, pieczarki, ananas",
     "Steps":"
